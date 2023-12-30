@@ -18,6 +18,18 @@ Use len() method to get the number of rows and columns and 'shape' attribute to 
 ### Step 5:
 Print the output and end the program.
 ## PROGRAM:
+```
+#Program to read contents from a csv file
+#Developed by : KISHOR KUMAR B.
+#Register nuumber:212223240072
+import pandas as pd
+df=pd.read_csv('/Users/kisho/Downloads/nba.csv')
+print(df.head(10))
+print(df.tail(5))
+print("Number of rows:",len(df.axes[0]))
+print("Number of columns:",len(df.axes[1]))
+print(df.shape)
+```
 
 ## OUTPUT:
 ![Screenshot 2023-12-30 071130](https://github.com/Kishorerz/Read-from-CSV/assets/144451216/277750b2-0f2a-4158-bfba-64def1760839)
